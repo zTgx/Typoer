@@ -3,10 +3,9 @@ import WordCard from './WordCard'
 import Drawer from '@/components/Drawer'
 import Tooltip from '@/components/Tooltip'
 import { currentChapterAtom, currentDictInfoAtom, isReviewModeAtom } from '@/store'
-import { Dialog } from '@headlessui/react'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
 import { atom, useAtomValue } from 'jotai'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 import ListIcon from '~icons/tabler/list'
 import IconX from '~icons/tabler/x'
 
@@ -26,6 +25,7 @@ export default function WordList() {
 
   const [isOpen, setIsOpen] = useState(false)
   const currentDictTitleValue = useAtomValue(currentDictTitle)
+  const activeWordRefs = useRef<Map<number, HTMLDivElement>>(new Map())
 
   function closeModal() {
     setIsOpen(false)
@@ -35,6 +35,46 @@ export default function WordList() {
     setIsOpen(true)
     dispatch({ type: TypingStateActionType.SET_IS_TYPING, payload: false })
   }
+
+  // 设置 ref 的回调函数
+  const setActiveWordRef = (index: number) => (el: HTMLDivElement | null) => {
+    if (el) {
+      activeWordRefs.current.set(index, el)
+    } else {
+      activeWordRefs.current.delete(index)
+    }
+  }
+
+  // 当 Drawer 打开时，自动滚动到当前单词
+  useEffect(() => {
+    if (isOpen) {
+      const activeIndex = state.chapterData.index
+      const activeElement = activeWordRefs.current.get(activeIndex)
+      if (activeElement) {
+        // 延迟一下，确保 DOM 已经渲染
+        setTimeout(() => {
+          activeElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center',
+          })
+        }, 100)
+      }
+    }
+  }, [isOpen, state.chapterData.index])
+
+  // 当单词索引变化时，自动滚动到当前单词
+  useEffect(() => {
+    if (isOpen) {
+      const activeIndex = state.chapterData.index
+      const activeElement = activeWordRefs.current.get(activeIndex)
+      if (activeElement) {
+        activeElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        })
+      }
+    }
+  }, [state.chapterData.index, isOpen])
 
   return (
     <>
@@ -48,16 +88,30 @@ export default function WordList() {
         </button>
       </Tooltip>
 
-      <Drawer open={isOpen} onClose={closeModal} classNames="bg-stone-50 dark:bg-gray-900">
-        <Dialog.Title as="h3" className="flex items-center justify-between p-4 text-lg font-medium leading-6 dark:text-gray-50">
+      <Drawer 
+        open={isOpen} 
+        onClose={() => {}} 
+        classNames="bg-stone-50 dark:bg-gray-900"
+        showBackdrop={false}
+        topOffset="6rem"
+      >
+        <h3 className="flex items-center justify-between p-4 text-lg font-medium leading-6 dark:text-gray-50">
           {currentDictTitleValue}
           <IconX onClick={closeModal} className="cursor-pointer" />
-        </Dialog.Title>
+        </h3>
         <ScrollArea.Root className="flex-1 select-none overflow-y-auto ">
           <ScrollArea.Viewport className="h-full w-full px-3">
             <div className="flex h-full w-full flex-col gap-1">
               {state.chapterData.words?.map((word, index) => {
-                return <WordCard word={word} key={`${word.name}_${index}`} isActive={state.chapterData.index === index} />
+                const isActive = state.chapterData.index === index
+                return (
+                  <div
+                    key={`${word.name}_${index}`}
+                    ref={setActiveWordRef(index)}
+                  >
+                    <WordCard word={word} isActive={isActive} />
+                  </div>
+                )
               })}
             </div>
           </ScrollArea.Viewport>
