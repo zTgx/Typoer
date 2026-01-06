@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
           可以在任意文件中一键开启，开启后单词显示在状态栏中，且插件会拦截用户对文档的输入，不会影响到原始文档。
         </p>
         <br /> <br />
-        <a className="mr-5 underline dark:text-gray-300" href="https://github.com/Kaiyiwing/qwerty-learner-vscode">
+        <a className="mr-5 underline dark:text-gray-300" href="https://github.com/your-username/typoer">
           GitHub 项目
         </a>
         <a className="underline dark:text-gray-300" href="https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner">
