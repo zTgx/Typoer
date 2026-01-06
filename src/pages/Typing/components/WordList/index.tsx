@@ -93,7 +93,7 @@ export default function WordList() {
         onClose={() => {}} 
         classNames="bg-stone-50 dark:bg-gray-900"
         showBackdrop={false}
-        topOffset="6rem"
+        topOffset="8rem"
       >
         <h3 className="flex items-center justify-between p-4 text-lg font-medium leading-6 dark:text-gray-50">
           {currentDictTitleValue}
