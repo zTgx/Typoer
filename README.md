@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">
-  Qwerty Learner
+  Typoer
 </h1>
 
 <p align="center">
@@ -16,21 +16,36 @@
 </p>
 
 <p align="center" style="display: flex; justify-content: center; gap: 10px;">
-  <a href="https://github.com/Realkai42/qwerty-learner/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Realkai42/qwerty-learner" alt="License"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/Realkai42/qwerty-learner" alt="License"></a>
   <a><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/></a>
   <a><img src="https://img.shields.io/badge/Powered%20by-React-blue"/></a>
-  <a><img src="https://img.shields.io/github/stars/RealKai42/qwerty-learner"/></a>
-  <a><img src="https://img.shields.io/github/forks/RealKai42/qwerty-learner"/></a>
 </p>
-<div align=center>
-<a href="https://trendshift.io/repositories/3239" target="_blank" class="trendshift-badge"><img src="https://trendshift.io/api/badge/repositories/3239" alt="RealKai42%2Fqwerty-learner | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-</div>
 
 <div align=center>
 <img  src="docs/Screenshot.png"/>
 </div>
 
-## 📸 在线访问
+## 🌐 在线访问
+
+**官方网站**: <https://typoer.com/>
+
+---
+
+> **关于本项目**
+> 
+> 本项目基于 [Qwerty Learner](https://github.com/Realkai42/qwerty-learner) 修改，保留了原项目的所有功能和特性。
+> 
+> 原始项目采用 [GPL 3.0 许可证](./LICENSE)，本项目同样遵循该许可证。
+> 
+> 原始项目链接：
+> - GitHub: [RealKai42/qwerty-learner](https://github.com/Realkai42/qwerty-learner)
+> - 原项目在线访问: <https://qwerty.kaiyi.cool/>
+> 
+> 感谢原项目作者 [RealKai42](https://github.com/Realkai42) 和所有贡献者的优秀工作！
+
+---
+
+## 📸 原项目在线访问
 
 **首选部署**: <https://qwerty.kaiyi.cool/>
 GitHub Pages: <https://realkai42.github.io/qwerty-learner/>

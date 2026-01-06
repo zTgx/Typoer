@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">
-  Qwerty Learner
+  Typoer
 </h1>
 
 <p align="center">
@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Realkai42/qwerty-learner/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Realkai42/qwerty-learner" alt="License"></a>
+  <a href="../LICENSE"><img src="https://img.shields.io/github/license/Realkai42/qwerty-learner" alt="License"></a>
   <a><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/></a>
   <a><img src="https://img.shields.io/badge/Powered%20by-React-blue"/></a>
 </p>
@@ -26,7 +26,27 @@
 <img  src="../docs/Screenshot.png"/>
 </div>
 
-## 📸 オンラインアクセス
+## 🌐 オンラインアクセス
+
+**公式ウェブサイト**: <https://typoer.com/>
+
+---
+
+> **このプロジェクトについて**
+> 
+> このプロジェクトは [QWERTY Learner](https://github.com/Realkai42/qwerty-learner) をベースにした修正版で、元のプロジェクトのすべての機能と特性を保持しています。
+> 
+> 元のプロジェクトは [GPL 3.0](../LICENSE) ライセンスの下で公開されており、このプロジェクトも同じライセンスに従います。
+> 
+> 元のプロジェクトリンク：
+> - GitHub: [RealKai42/qwerty-learner](https://github.com/Realkai42/qwerty-learner)
+> - 元のオンラインアクセス: <https://qwerty.kaiyi.cool/>
+> 
+> 元のプロジェクトの作者 [RealKai42](https://github.com/Realkai42) とすべての貢献者の優れた仕事に感謝します！
+
+---
+
+## 📸 元のプロジェクトのオンラインアクセス
 
 Vercel: <https://qwerty.kaiyi.cool/> , <https://qwerty-learner.vercel.app/>
 GitHub Pages: <https://realkai42.github.io/qwerty-learner/>

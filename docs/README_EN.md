@@ -3,18 +3,15 @@
 </div>
 
 <h1 align="center">
-  QWERTY Learner
+  Typoer
 </h1>
 <p align="center">
   Design for people want to memorize words and practice typings.
 </p>
 
 <p align="center">
-  <a href="https://github.com/Kaiyiwing/qwerty-learner/blob/master/LICENSE">
+  <a href="../LICENSE">
     <img src="https://img.shields.io/github/license/KaiyiWing/qwerty-learner" alt="License">
-  </a>
-  <a>
-    <img src="https://travis-ci.com/Kaiyiwing/qwerty-learner.svg?branch=master" alt="Build State">
   </a>
   <a>
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/>
@@ -28,7 +25,27 @@
   <img src="Screenshot.png"/>
 </div>
 
-## 📸 Online Access
+## 🌐 Online Access
+
+**Official Website**: <https://typoer.com/>
+
+---
+
+> **About This Project**
+> 
+> This project is a modified version based on [QWERTY Learner](https://github.com/Realkai42/qwerty-learner), retaining all features and functionality of the original project.
+> 
+> The original project is licensed under [GPL 3.0](../LICENSE), and this project follows the same license.
+> 
+> Original Project Links:
+> - GitHub: [RealKai42/qwerty-learner](https://github.com/Realkai42/qwerty-learner)
+> - Original Online Access: <https://qwerty.kaiyi.cool/>
+> 
+> Thanks to the original project author [RealKai42](https://github.com/Realkai42) and all contributors for their excellent work!
+
+---
+
+## 📸 Original Project Online Access
 
 We have deployed QWERTY Learner on many platforms. You can try QWERTY Learner in following ways.
 
