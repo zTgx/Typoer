@@ -1,0 +1,20 @@
+<svg width="900" height="256" viewBox="0 0 900 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon -->
+  <rect x="0" y="0" width="256" height="256" rx="48" fill="#2563EB"></rect>
+  <path d="
+      M64 64
+      H192
+      V96
+      H144
+      V192
+      H112
+      V96
+      H64
+      Z
+    " fill="#FFFFFF"></path>
+
+  <!-- Text -->
+  <text x="300" y="170" font-size="120" font-weight="700" font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" fill="#0F172A">
+    Typoer
+  </text>
+</svg>

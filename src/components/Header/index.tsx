@@ -1,4 +1,4 @@
-import logo from '/logo.png'
+import logo from '/logo.svg'
 import type { PropsWithChildren } from 'react'
 import type React from 'react'
 import { NavLink } from 'react-router-dom'
